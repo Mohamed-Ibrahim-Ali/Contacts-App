@@ -1,0 +1,49 @@
+<div class="container comp">
+  <h2 class='my-5 text-center'> <i class="fas fa-search mx-2"></i> Contacts</h2>
+  <div class="list">
+    <input type="text" [(ngModel)]='term' class="form-control" placeholder="search" name="search" />
+    <button (click)="go()"> <i class="fas fa-plus fa-x"></i> Add New </button>
+    <p class="my-2"> Recent </p>
+
+    <!--Recent List-->
+    <div class="items" *ngFor="let x of Data| filter:term">
+      <div class="row my-3">
+        <div class="col-4">
+          <img [src]="x.image" class="container-fluid" />
+        </div>
+        <div class="col-5">
+          <h5>{{x.firstName + x.lastName}}</h5>
+          <h6>{{x.email}}</h6>
+          <span>{{x.mobileNumber}}</span>
+        </div>
+      </div>
+      <hr />
+    </div>
+    
+    <!--Contact List-->
+    <p class="my-2"> Contacts </p>
+    <div class="row">
+      <div class="col-10">
+        <div class="items" *ngFor="let x of Contacts| search:term">
+          <div class="row my-3">
+            <div class="col-4">
+              <img [src]="x.image" class="container-fluid" />
+            </div>
+            <div class="col-5">
+              <h5>{{x.firstName + x.lastName}}</h5>
+              <h6>{{x.email}}</h6>
+              <span>{{x.mobileNumber}}</span>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <!--Letters List-->
+      <div class="col-2">
+        <ul class="list-unstyled">
+          <li *ngFor="let x of letters">{{x}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

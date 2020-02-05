@@ -1,0 +1,46 @@
+.comp{
+    border: 1px dotted #28a745;;
+    width: 50%;
+    padding: 20px;
+}
+.comp h2{
+    color : #007bff;
+}
+.form {
+    width: 80%;
+    margin: 10px auto;
+}
+.form input{
+    margin: 15px 0;
+}
+.img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 35px;
+    background-image: url("../../../assets/profile.jpg");
+    background-size: 100% 100%;
+}
+.img span {
+    color: #28a745;
+    font-weight: 500;
+}
+/* Media Query */
+@media(max-width : 577px ) {
+    .comp {
+        width : 100%
+    }
+    .comp h2{
+       font-size: 25px;
+    }
+    .form {
+        width: 100%;
+        margin: 10px auto;
+    }
+}

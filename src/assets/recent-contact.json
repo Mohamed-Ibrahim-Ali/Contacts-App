@@ -1,0 +1,24 @@
+{
+    "stautsCode": 200,
+    "message": "Successful process",
+    "data": [
+        {
+            "contactId": "nHKnF54asnurEqdv",
+            "email": "moaaz@vapulus.com",
+            "firstName": "sara",
+            "lastName": "hassan ",
+            "mobileNumber": "117752107086",
+            "image": "https://www.astutesolutions.com/media/20938/contact-center-models-blog-3.jpg",
+            "created_ts": "2017-05-08T12:01:13.000Z"
+        },
+        {
+            "contactId": "rFZNBuIWoBMn3bES",
+            "email": "ar.sharawi@hotmail.com",
+            "firstName": "Abdelrahman",
+            "lastName": "Elsharawy",
+            "mobileNumber": "2001016666903",
+            "image": "https://27xeg212doax35gqg71e13rv-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/man-providing-excellent-customer-service-from-work-at-home-agent.jpg",
+            "created_ts": "2017-05-03T13:53:01.000Z"
+        }
+    ]
+}

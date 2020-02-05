@@ -1,0 +1,21 @@
+<div class="container text-center comp">
+  <h2 class= 'my-5'>Add New Contact</h2>
+  <div class="form">
+    <div class="form-group">
+      <form ngForm #Data="ngForm" (ngSubmit)="add(Data)">
+      <div class="img">
+        <span>Add Photo</span>
+        <input ngModel #photo='ngModel' type="file" name="pic" (blur)="url(photo)"/>
+      </div>
+            <input ngModel #first='ngModel' type="text" class="form-control" placeholder="First Name" name="first" required maxlength="7"/>
+            <p class='alert alert-danger' *ngIf="first.touched && first.errors?.required">Insert Name</p>
+            <input ngModel #last='ngModel' type="text" class="form-control" placeholder="Last Name" name="last" maxlength="7"/>
+            <input ngModel #num='ngModel' type="number" class="form-control" placeholder="Number" name="num" required/>
+            <p class='alert alert-danger' *ngIf="num.touched && num.errors?.required">Insert Phone</p>
+            <input ngModel #email='ngModel' type="email" class="form-control" placeholder="Email Address" name="email" />
+            <button [disabled]='Data.invalid' type="submit" class="btn btn-success m-3" > Add Contact </button>
+            <button class="btn btn-primary" (click)="back()">Cancel</button>
+       </form>
+    </div>
+  </div>
+</div>
